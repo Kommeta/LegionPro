@@ -45,10 +45,7 @@ body {
 }
 .block-title-section {
   font-size: 71px;
-  background: linear-gradient(45deg, #4facfe 30%, #00f2fe 60%, #8aa9d6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0b2349;
+  color: #4facfe;
   margin: 0;
   padding-bottom: 130px;
 }
