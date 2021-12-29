@@ -999,4 +999,7 @@ figure {
     padding-left: 0px;
     padding-bottom: 10px;
   }
+  .footer-row {
+    font-size: 12px;
+  }
 }
