@@ -175,31 +175,64 @@ figure {
 }
 .footer {
   font-family: "Montserrat", sans-serif;
-  background: url("../img/fon-grey.jpg") 0 0/100% 100% no-repeat;
-  background-size: cover;
+  background: url("../img/fon-grey.jpg") 0 0/100% auto no-repeat;
+  padding: 50px 80px 50px 100px;
 }
 .footer-description {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 60px;
-  padding-bottom: 10px;
-  margin-left: -60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 950px;
+  column-gap: 35px;
+}
+.grid {
+  display: grid;
+  grid-template-rows: repeat(8, 115px);
+}
+@media screen and (min-width: 767px) {
+  .grid_1 {
+    grid-row-start: span 3;
+  }
+  .grid_2 {
+    grid-row-start: span 2;
+  }
+  .grid_3 {
+    grid-row-start: span 2;
+  }
+  .grid_5 {
+    grid-row-start: span 5;
+  }
+  .grid_7 {
+    grid-row-start: span 5;
+  }
+  .grid_8 {
+    grid-row-start: span 2;
+  }
+  .grid_10 {
+    grid-row-start: span 5;
+  }
+  .grid_11 {
+    grid-row-start: span 2;
+  }
+  .grid_13 {
+    grid-row-start: span 3;
+  }
+  .grid_14 {
+    grid-row-start: span 2;
+  }
+  .grid_15 {
+    grid-row-start: span 2;
+  }
 }
 .footer-row {
   color: #fff;
   font-size: 21px;
-  width: 290px;
-  padding: 0 30px;
   border-right: 3px solid #143d45;
 }
 .border {
   border-right: none;
 }
 .text-small {
-  font-size: 12px;
-  line-height: 4px;
+  font-size: 11px;
 }
 .footer-title {
   color: #00f6ff;
@@ -209,7 +242,6 @@ figure {
   color: rgb(228, 228, 228);
 }
 .footer-logo {
-  padding-top: 265px;
 }
 
 /*Responsive*/
@@ -273,6 +305,12 @@ figure {
     padding-top: 130px;
     padding-left: 820px;
     padding-right: 100px;
+  }
+  .footer {
+    background: url("../img/fon-grey.jpg") 0 0/100% 100% no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-right: 20px;
   }
 }
 /* 1501 - 1775 */
@@ -358,8 +396,14 @@ figure {
   .block-wrapper-height {
     padding-top: 555px;
   }
+  .footer-row {
+    font-size: 18px;
+  }
+  .grid {
+    grid-template-rows: repeat(8, 80px);
+  }
   .footer-description {
-    margin-left: -95px;
+    grid-template-rows: 780px;
   }
 }
 /* 1221 - 1500 */
@@ -469,11 +513,17 @@ figure {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  .border {
-    border-right: 3px solid #143d45;
-  }
   .block-logo-small {
     padding-left: 339px;
+  }
+  .footer-row {
+    font-size: 14px;
+  }
+  .grid {
+    grid-template-rows: repeat(8, 122px);
+  }
+  .footer-description {
+    grid-template-rows: 1165px;
   }
 }
 /* 992 - 1220 */
@@ -550,8 +600,28 @@ figure {
   .block-logo-small {
     padding-left: 424px;
   }
+  .block-wrapper-right {
+    padding-bottom: 80px;
+  }
   .footer-description {
-    margin-left: 88px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 435px;
+    column-gap: 35px;
+  }
+  .grid {
+    grid-template-rows: repeat(8, 45px);
+  }
+  .grid_4 {
+    grid-row-start: span 2;
+  }
+  .grid_9 {
+    grid-row-start: span 2;
+  }
+  .grid_10 {
+    grid-row-start: span 6;
+  }
+  .border {
+    border-right: 3px solid #143d45;
   }
 }
 /* 767 - 991 */
@@ -649,12 +719,8 @@ figure {
     padding-right: 20px;
     padding-bottom: 60px;
   }
-  .block-logo-small {
-    padding-left: 342px;
-  }
-  .footer-description {
-    margin-left: -33px;
-    padding-top: 30px;
+  .grid {
+    grid-template-rows: repeat(8, 44px);
   }
 }
 /* 577 - 766 */
@@ -785,17 +851,14 @@ figure {
     padding-bottom: 20px;
   }
   .footer-description {
-    margin-left: 0;
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
-  .footer-row {
-    font-size: 14px;
+  .grid {
+    grid-template-rows: repeat(4, auto);
   }
-  .footer-logo {
-    padding-top: 0;
-  }
-  .block-logo-small {
-    padding-left: 348px;
+  .footer {
+    padding-right: 0;
   }
 }
 /* 0 - 576 */
@@ -935,14 +998,5 @@ figure {
     padding-top: 20px;
     padding-left: 0px;
     padding-bottom: 10px;
-  }
-  .footer-row {
-    width: 190px;
-  }
-  .footer-row {
-    font-size: 12px;
-  }
-  .block-logo-small {
-    padding-left: 273px;
   }
 }
