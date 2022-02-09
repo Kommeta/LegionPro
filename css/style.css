@@ -6,7 +6,6 @@ body {
 .block {
   max-width: 1920px;
   margin: 0 auto;
-  padding-left: 130px;
   font-family: "Montserrat", sans-serif;
 }
 .block-img_1 {
@@ -16,15 +15,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 60px 0 80px 130px;
 }
 .block-name {
   color: #fff;
   font-size: 132px;
   text-transform: uppercase;
-  margin-right: 920px;
-  margin-bottom: -25px;
+  margin: 0 0 0 -30%;
 }
 .block-logo {
   height: 880px;
@@ -253,15 +250,13 @@ figure {
   }
   .block-name {
     font-size: 110px;
-    margin-right: 750px;
+
   }
   .block-logo {
     height: 750px;
   }
   .block-sabcontent {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 85px;
+    padding: 100px 85px 75px 0;
   }
   .block-info {
     max-width: 755px;
@@ -274,37 +269,35 @@ figure {
     padding-bottom: 35px;
   }
   .block-description-left {
-    padding-bottom: 77px;
+    padding: 100px 0 70px 100px;
+    width: 40%;
   }
   .block-wrapper {
-    padding-top: 80px;
-    width: 35%;
-    padding-left: 980px;
-    padding-bottom: 60px;
+    padding: 80px 0 60px 930px;    
+    width: 40%;   
   }
   .right-new {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   .block-longer {
-    width: 50%;
+    width: 57%;
+  }
+  .block-img-computer{
+    padding: 0 0 0 100px;
   }
   .block-wrapper-content {
     padding-top: 85px;
     padding-bottom: 65px;
   }
   .block-wrapper-text {
-    padding-top: 295px;
-    padding-bottom: 95px;
+    padding: 240px 0 80px 100px;
+    max-width: 30%;
   }
   .block-wrapper-height {
-    padding-top: 655px;
-    padding-right: 130px;
-    padding-bottom: 85px;
+    padding: 590px 130px 70px 100px;
   }
   .block-wrapper-right {
-    padding-top: 130px;
-    padding-left: 820px;
-    padding-right: 100px;
+    padding: 90px 60px 100px 780px;
   }
   .footer {
     background: url("../img/fon-grey.jpg") 0 0/100% 100% no-repeat;
@@ -320,7 +313,6 @@ figure {
   }
   .block-name {
     font-size: 90px;
-    margin-right: 700px;
   }
   .block-logo {
     height: 620px;
@@ -368,8 +360,12 @@ figure {
     line-height: 32px;
   }
   .block-description-left {
-    padding-bottom: 155px;
+    padding-bottom: 140px;
   }
+  .block-description {
+    padding: 0 0 0 120px;
+}
+
   .block-wrapper {
     padding-top: 50px;
     width: 35%;
@@ -389,18 +385,21 @@ figure {
   .block-img-computer img {
     width: 85%;
   }
-  .block-wrapper-text {
-    padding-top: 270px;
-    padding-right: 960px;
-  }
-  .block-wrapper-height {
-    padding-top: 555px;
-  }
+.block-wrapper-text {
+  padding: 160px 0 60px 80px;
+  max-width: 30%;
+}
+.block-wrapper-height {
+  padding: 500px 130px 60px 80px;
+}
+.footer {  
+  padding: 20px 20px 20px 80px;
+}
   .footer-row {
-    font-size: 18px;
+    font-size: 13px;
   }
   .grid {
-    grid-template-rows: repeat(8, 80px);
+    grid-template-rows: repeat(8, 75px);
   }
   .footer-description {
     grid-template-rows: 780px;
@@ -413,8 +412,7 @@ figure {
   }
   .block-name {
     font-size: 40px;
-    margin-right: 615px;
-    margin-bottom: -10px;
+
   }
   .block-content {
     padding-bottom: 80px;
@@ -538,8 +536,7 @@ figure {
   }
   .block-name {
     font-size: 40px;
-    margin-right: 470px;
-    margin-bottom: -10px;
+
   }
   .block-logo {
     height: 400px;
@@ -632,8 +629,7 @@ figure {
   }
   .block-name {
     font-size: 30px;
-    margin-right: 320px;
-    margin-bottom: -10px;
+
   }
   .block-logo {
     height: 290px;
@@ -735,8 +731,7 @@ figure {
   }
   .block-name {
     font-size: 25px;
-    margin-right: 245px;
-    margin-bottom: -6px;
+
   }
   .block-logo {
     height: 235px;
@@ -877,8 +872,7 @@ figure {
   }
   .block-name {
     font-size: 20px;
-    margin-right: 100px;
-    margin-bottom: -7px;
+
   }
   .block-logo {
     height: 125px;
