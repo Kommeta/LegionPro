@@ -857,7 +857,8 @@ figure {
   .footer-description {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-rows: 408px;
+    grid-template-rows: 290px;
+    column-gap: 15px;
   }
   .grid {
     grid-template-rows: repeat(4, auto);
@@ -872,7 +873,7 @@ figure {
     grid-row-start: span 1;
 }
 .grid_6 {
-  grid-row-start: span 7;
+  grid-row-start: span 3;
 }
 .grid_9 {
   grid-row-start: span 1;
@@ -884,29 +885,30 @@ figure {
   grid-row-start: span 1;
 }
   .footer {
-    padding: 30px 20px 30px 40px;
+    padding: 20px;
   }
   .footer-row {
     font-size: 11px;
+}
+.text-small {
+  font-size: 7px;
 }
 }
 /* 0 - 576 */
 @media screen and (max-width: 576px) {
   .block {
     max-width: 90%;
-    padding-left: 10px;
   }
   .block-img_1 {
     background: url("../img/Computer-1.jpg") 0 0/100% 100% no-repeat;
     background-size: cover;
   }
   .block-content {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 30px;
   }
   .block-name {
     font-size: 20px;
-
+    margin: 0 130px 0 0;
   }
   .block-logo {
     height: 125px;
@@ -919,38 +921,46 @@ figure {
     background-size: cover;
   }
   .block-sabcontent {
-    padding-right: 10px;
+    padding: 20px 20px 20px 30px;
   }
+  .block-title-section {
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+.block-section-img {
+  max-width: 95px;
+}
+.block-points-text {
+  font-size: 7px;
+  margin: 0px 0px 10px 0px;
+}
   .block-content-right {
+    align-items: flex-start;
+    padding: 20px 20px 0px 30px;
     flex-direction: column;
+  }
+  .block-logo-ryzen{
+    order: 3;
   }
   .ryzen-img {
     width: 20%;
   }
-  .block-description-right {
-    width: 100%;
-    text-align: center;
+  .block-description-right {    
+    width: 100%;  
   }
   .block-title {
     font-size: 15px;
     margin-bottom: 15px;
   }
   .block-text-white {
+    font-size: 10px;
+    line-height: 10px;
+    text-shadow: 10px 2px 15px #000;
     padding-left: 0;
   }
-  .block-text-white {
-    font-size: 10px;
-    line-height: 12px;
-    text-shadow: 10px 2px 15px #000;
-  }
-  .block-content-right {
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
   .block-description-left {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    width: 100%;
+    padding: 20px 20px 20px 30px;
+    width: auto;
   }
   .block-img_4 {
     background: url("../img/Computer-3.jpg") 0 0/100% 100% no-repeat;
@@ -964,53 +974,42 @@ figure {
     padding-bottom: 0;
   }
   .block-wrapper {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    width: 97%;
+    padding: 20px 20px 20px 30px;
+    width: auto;
   }
   .block-img_6 {
     background: url("../img/Computer-5.jpg") 0 0/100% 100% no-repeat;
     background-size: cover;
   }
-  .block-longer {
-    text-align: center;
-    width: 95%;
-  }
   .block-wrapper-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .block-wrapper-content {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
+    flex-direction: column;  
+    padding: 20px 20px 20px 30px;
   }
   .block-img-computer img {
-    width: 28%;
-    margin-right: 0px;
+    width: 100%;
+    margin: 0 auto;
   }
   .block-wrapper-text {
-    padding-top: 90px;
     padding-right: 275px;
-    padding-bottom: 25px;
   }
+  .block-description {
+    width: 100%;
+}
   .block-img_8 {
     background: url("../img/Computer-6.jpg") 0 0/100% 100% no-repeat;
     background-size: cover;
   }
   .block-wrapper-text {
-    padding-top: 35px;
-    padding-right: 15px;
+    padding: 20px 20px 20px 30px;
+    max-width: 62%;
   }
   .block-img_9 {
     background: url("../img/Computer-7.jpg") 0 0/100% 100% no-repeat;
     background-size: cover;
   }
   .block-wrapper-height {
+    padding: 20px 20px 20px 30px;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    padding-right: 10px;
   }
   .width-title {
     width: 90%;
@@ -1023,11 +1022,17 @@ figure {
     background-size: cover;
   }
   .block-wrapper-right {
-    padding-top: 20px;
-    padding-left: 0px;
-    padding-bottom: 10px;
+    padding: 20px 20px 20px 30px;
   }
+  .footer {
+    padding: 10px;
+}
   .footer-row {
-    font-size: 12px;
+    font-size: 9px;
+     border-right: 1px solid #143d45;
   }
+  .footer-description {
+    grid-template-rows: 323px;
+    column-gap: 10px;
+}
 }
