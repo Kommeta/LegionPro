@@ -1029,7 +1029,7 @@ figure {
 }
   .footer-row {
     font-size: 9px;
-     border-right: 1px solid #143d45;
+    border-right: 1px solid #143d45;
   }
   .footer-description {
     grid-template-rows: 323px;
